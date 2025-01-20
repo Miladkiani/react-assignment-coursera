@@ -1,0 +1,63 @@
+.app-header {
+    background-color: var(--color-primary); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: var(--stroke-1); 
+    position: relative;
+    z-index: 10; 
+  
+    .header-content {
+      display: flex;
+      align-items: center;
+  
+      .logo {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--color-surface); 
+  
+        img {
+          height: 40px; 
+          margin-right: 10px; 
+        }
+  
+        .company-name {
+          font-size: 1.5rem; 
+          font-weight: bold;
+        }
+      }
+    }
+  
+    .cart-icon {
+      position: relative; 
+  
+      a {
+        display: flex;
+        align-items: center;
+        color: white; 
+        text-decoration: none;
+  
+        i {
+          font-size: 1.5rem; 
+        }
+      }
+  
+      .cart-badge {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -5px; 
+        right: -10px; 
+        background-color: var(--color-secondary); 
+        color: white;
+        border-radius: 50%;
+        padding: 5px;
+        font-size: 0.8rem; 
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
