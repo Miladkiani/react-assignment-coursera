@@ -1,0 +1,10 @@
+.button {
+  width: 9.375rem;
+  height: 2.5rem;
+  border-radius: 0.375rem;
+  border: unset;
+  cursor: pointer;
+  &__primary {
+    background-color: var(--color-primary);
+  }
+}
