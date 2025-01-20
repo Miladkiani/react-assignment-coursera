@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-interface Product {
+export interface IProduct {
   id: number;
   name: string;
   price: number;
@@ -9,11 +9,11 @@ interface Product {
   isInCart?: boolean;
 }
 
-interface ProductsState {
-  items: Product[];
+interface IProductsState {
+  items: IProduct[];
 }
 
-const initialState: ProductsState = {
+const initialState: IProductsState = {
   items: [
     {
       id: 1,
@@ -74,7 +74,7 @@ const productsSlice = createSlice({
 });
 
 export const { toggleInCart } = productsSlice.actions;
-export const selectProducts = (state: { products: ProductsState }) =>
+export const selectProducts = (state: { products: IProductsState }) =>
   state.products.items;
 
 export default productsSlice.reducer;
