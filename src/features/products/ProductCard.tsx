@@ -1,10 +1,9 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-
-import "./ProductCard.scss";
-import { addToCart } from "../cart/cartSlice";
-import { IProduct, toggleInCart } from "./productsSlice";
 import clsx from "clsx";
+import { addToCart } from "../cart/cartSlice";
+import "./product-card.scss";
+import { IProduct, toggleInCart } from "./productsSlice";
 
 interface ProductCardProps {
   product: IProduct;
