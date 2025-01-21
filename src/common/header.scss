@@ -8,8 +8,12 @@
     position: relative;
     z-index: 10; 
     position: sticky;
+ 
+    
+
   
-    .header-content {
+    &__content {
+      flex: 25%;
       display: flex;
       align-items: center;
   
@@ -24,41 +28,50 @@
           margin-right: 10px; 
         }
   
-        .company-name {
-          font-size: 1.5rem; 
-          font-weight: bold;
-        }
+       
       }
     }
-  
-    .cart-icon {
+
+    &__title{
+      text-align: center;
+      flex: 1;
+    }
+
+    &__logo{
+      text-decoration: none;
+      color: #000;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      
+    }
+
+
+    &__cart{
+      flex:25%;
+      display: flex;
+      justify-content: end;
+    }
+ 
+    &__cart-icon {
+    
       position: relative; 
-  
+      background-image: url("./assets/images/shopping-cart-icon.png");
+      background-size: cover;
+   
+      width: 40px;
+      height: 40px;
       a {
-        display: flex;
-        align-items: center;
-        color: white; 
+        color: #fff; 
         text-decoration: none;
-  
-        i {
-          font-size: 1.5rem; 
-        }
-      }
-  
-      .cart-badge {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         position: absolute;
-        top: -5px; 
-        right: -10px; 
-        background-color: var(--color-secondary); 
-        color: white;
-        border-radius: 50%;
-        padding: 5px;
-        font-size: 0.8rem; 
-        width: 20px;
-        height: 20px;
+        right: 25%;
+        top: 50%;
+        transform: translateY(-50%);
+        font-weight:500 ;
+        font-size: x-large;
       }
     }
+
+
   }

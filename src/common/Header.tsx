@@ -9,19 +9,25 @@ export const Header: React.FC = () => {
 
   return (
     <header className="app-header">
-      <div className="header-content">
-        <Link to="/" className="logo">
-          <img src="path/to/your/logo.png" alt="Company Logo" />
-          <span className="company-name"></span>
+      <div className="app-header__content">
+        <Link to="/" className="app-header__logo">
+          <img
+            src="./assets/images/logo.svg"
+            alt="Company Logo"
+            width={40}
+            height={40}
+          />
+          <div>
+            <h3>Plant Company</h3>
+            <h6>Lorem ipsum dolor sit amet.</h6>
+          </div>
         </Link>
       </div>
-      <div className="cart-icon">
-        <Link to="/cart">
-          <i className="fas fa-shopping-cart"></i>
-          {cartItems.length > 0 && (
-            <span className="cart-badge">{cartItems.length}</span>
-          )}
-        </Link>
+      <h3 className="app-header__title">Plant</h3>
+      <div className="app-header__cart">
+        <div className="app-header__cart-icon">
+          <Link to="/cart">{cartItems.length}</Link>
+        </div>
       </div>
     </header>
   );
