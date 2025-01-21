@@ -182,3 +182,5 @@ export const selectProducts = (state: { products: IProductsState }) =>
   state.products.items;
 
 export default productsSlice.reducer;
+
+

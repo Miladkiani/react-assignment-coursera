@@ -27,9 +27,9 @@ export const CartPage: FC = () => {
         cartItems.map((item) => <CartItem key={item.id} item={item} />)
       )}
       <div className="cart-page__buttons">
-        <Button>
-          <Link to={"/products"}>Continue Shopping </Link>
-        </Button>
+        <Link to={"/products"}>
+          <Button>Continue Shopping</Button>
+        </Link>
 
         <Button>Checkout</Button>
       </div>
