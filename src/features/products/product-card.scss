@@ -1,0 +1,49 @@
+.product-card {
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: var(--color-surface);
+    width: 280px;
+    height: 320px;
+    align-items: center;
+    padding-block:1rem ;
+
+    border-radius: 0.3125rem;
+
+    transition: transform 0.2s;
+    border: none;
+    position: relative;
+
+    & > img{
+        object-fit: cover;
+        width: 50%;
+        height: 60%;
+        border-radius: 0.3125rem;
+    }
+
+    &__price{
+        color: var(--color-secondary);
+    }
+
+    &:hover {
+        transform: scale(1.05);
+      }
+
+      :disabled{
+        background-color: var(--color-disabled);
+      }
+
+      &__badge{
+        background-color: var(--color-secondary);
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-start-end-radius: 0.3125rem;
+        border-end-start-radius: 0.3125rem;
+        padding: 0.25rem;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 0.75rem;
+      }
+}

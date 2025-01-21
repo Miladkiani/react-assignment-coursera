@@ -4,6 +4,7 @@ import clsx from "clsx";
 import { addToCart } from "../cart/cartSlice";
 import "./product-card.scss";
 import { IProduct, toggleInCart } from "./productsSlice";
+import { Button } from "../../common/Button";
 
 interface ProductCardProps {
   product: IProduct;
@@ -19,11 +20,11 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
 
   return (
     <div className="product-card">
-      <img src={`path/to/your/images/${product.id}.jpg`} alt={product.name} />
       <h3>{product.name}</h3>
-      <p>${product.price.toFixed(2)}</p>
+      <img src={`assets/images/plant.jpg`} alt={product.name} />
+      <p className="product-card__price">${product.price.toFixed(2)}</p>
       <p>{product.description}</p>
-      <button
+      <Button
         className={clsx("product-card__button", {
           "product-card__button--disabled": product.isInCart,
         })}
@@ -31,7 +32,8 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         onClick={handleAddToCart}
       >
         {product.isInCart ? "Added to Cart" : "Add to Cart"}
-      </button>
+      </Button>
+      <span className="product-card__badge">sale</span>
     </div>
   );
 };

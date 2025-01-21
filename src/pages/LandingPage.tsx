@@ -13,7 +13,7 @@ export const LandingPage: FC = () => {
             <h1>Welcome to Paradise Nursery </h1>
             <h3>Lorem ipsum dolor sit amet.</h3>
             <Link to="/products">
-              <Button label="Get Started" />
+              <Button>Get Started</Button>
             </Link>
           </div>
 
