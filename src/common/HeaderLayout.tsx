@@ -5,9 +5,9 @@ import { Header } from "./Header";
 
 export const HeaderLayout: React.FC = () => {
   return (
-    <>
+    <div className="header-layout">
       <Header />
       <Outlet />
-    </>
+    </div>
   );
 };

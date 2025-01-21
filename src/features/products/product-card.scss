@@ -1,0 +1,35 @@
+.product-card {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--color-surface);
+    width: 320px;
+    height: 420px;
+    align-items: center;
+    padding-block:1rem ;
+
+    border-radius: 0.3125rem;
+
+    transition: transform 0.2s;
+    border: none;
+
+    & > img{
+        object-fit: cover;
+        width: 50%;
+        height: auto;
+        border-radius: 0.3125rem;
+    }
+
+    &__price{
+        color: var(--color-secondary);
+    }
+
+    &:hover {
+        transform: scale(1.05);
+      }
+
+      :disabled{
+        background-color: var(--color-disabled);
+      }
+}

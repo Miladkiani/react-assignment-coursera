@@ -1,10 +1,20 @@
+
 .button {
-  width: 9.375rem;
+  
+  width: 7.5rem;
   height: 2.5rem;
   border-radius: 0.375rem;
   border: unset;
   cursor: pointer;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  
   &__primary {
     background-color: var(--color-primary);
   }
+
+
 }
