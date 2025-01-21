@@ -31,7 +31,7 @@ export const CartPage: FC = () => {
           <Button>Continue Shopping</Button>
         </Link>
 
-        <Button>Checkout</Button>
+        <Button onClick={() => alert("Coming Soon")}>Checkout</Button>
       </div>
     </div>
   );
