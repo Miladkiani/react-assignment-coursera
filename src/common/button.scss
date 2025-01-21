@@ -1,7 +1,7 @@
 
 .button {
   
-  width: 7.5rem;
+  min-width: 7.5rem;
   height: 2.5rem;
   border-radius: 0.375rem;
   border: unset;
@@ -15,6 +15,12 @@
   &__primary {
     background-color: var(--color-primary);
   }
+
+
+  &__secondary {
+    background-color: var(--color-secondary);
+  }
+
 
 
 }
